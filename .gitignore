@@ -1,0 +1,19 @@
+# Log files
+log/
+target/*
+Reports/*
+Screenshots/*
+AppiumLogs/*
+# IntelliJ
+/out/
+.idea/
+
+# Gradle files
+.gradle/
+build/
+
+# Ignore Gradle GUI config
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache

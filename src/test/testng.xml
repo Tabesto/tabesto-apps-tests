@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="tabesto.testing.integration.reporter.InfluxDBListener" />
+    </listeners>
+    <test name="GalaxyTabA">
+        <parameter name="platformName" value="Android" />
+        <parameter name="udid" value="R52N104R6KW" />
+        <parameter name="deviceName" value="Galaxy Tab A" />
+        <parameter name="systemPort" value="10000" />
+        <parameter name="chromeDriverPort" value="11000" />
+        <classes>
+            <class name="com.runners.MyPixel2XLTestNGRunnerTest"/>
+        </classes>
+    </test>
+<!--        <test name="GalaxyTabB">-->
+<!--            <parameter name="platformName" value="Android" />-->
+<!--            <parameter name="udid" value="R52N50SEDKY" />-->
+<!--            <parameter name="deviceName" value="Galaxy Tab B" />-->
+<!--            <parameter name="systemPort" value="10001" />-->
+<!--            <parameter name="chromeDriverPort" value="11001" />-->
+<!--            <classes>-->
+<!--                <class name="com.runners.MyPixel3TestNGRunnerTest"/>-->
+<!--            </classes>-->
+<!--        </test>-->
+<!--    <test name="GalaxyTab">-->
+<!--        <parameter name="platformName" value="Android" />-->
+<!--        <parameter name="udid" value="R9WM91REZCJ" />-->
+<!--        <parameter name="deviceName" value="Galaxy Tab" />-->
+<!--        <parameter name="systemPort" value="10002" />-->
+<!--        <parameter name="chromeDriverPort" value="11002" />-->
+<!--        <classes>-->
+<!--            <class name="com.runners.MyPixel4XLTestNGRunnerTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>

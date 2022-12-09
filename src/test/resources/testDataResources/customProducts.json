@@ -1,0 +1,20 @@
+[
+  {
+    "referenceId":"461",
+    "name":"produit à composer",
+    "description":"",
+    "miniature":null,
+    "mapped":"1",
+    "menuLabel":"Carte Gouter STRAT C, Carte par défaut STRAT C",
+    "choicesCount":"1"
+  },
+  {
+    "referenceId":"464",
+    "name":"testPacApi",
+    "description":"test_description",
+    "miniature":null,
+    "mapped":"1",
+    "menuLabel":"Carte Gouter STRAT C",
+    "choicesCount":"2"
+  }
+]

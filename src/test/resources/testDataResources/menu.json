@@ -1,0 +1,372 @@
+[{
+  "category":[
+    {
+      "location":"A EMPORTER",
+      "title":"Sandwichs chauds",
+      "products":[
+        "Le Mexicain",
+        "Le Généreux",
+        "Le comté"
+      ]
+    },
+    {
+      "location":"SUR PLACE",
+      "title":"Sandwichs Froids",
+      "products":[
+        "Le Mexicain",
+        "Le Généreux",
+        "Le Nordique",
+        "Le Parisien"
+      ]
+    }
+  ],
+  "Product":[
+    {
+      "name":"le comté",
+      "hasMealSeqSugg":false,
+      "description":"Jambon origine France, comté AOP, tomate, mayonnaise allégée, salade et baguette rustique",
+      "price":550,
+      "options":[
+        "Comté AOP (20g)",
+        "Double Comté (40g)",
+        "Jambon Blanc (20g)",
+        "Œuf dur (1/2 œuf )"
+      ],
+      "MealSeqSugg":[
+        "Menu Chaud",
+        "Menu Etudiant"
+      ],
+      "allergens":[
+        "Gluten",
+        "Moutarde"
+      ]
+    }
+  ],
+  "options":[
+    {
+      "product":"le comté",
+      "option":[
+        {
+          "name":"Souhaitez-vous des ingrédients supplémentaires?",
+          "type":"obligatoire",
+          "choices":[
+            {
+              "name":"Sans Bacon(20g)",
+              "price":80
+            },
+            {
+              "name":"Bacon",
+              "price":90
+            }
+          ]
+        },
+        {
+          "name":"Souhaitez-vous des ingrédients supplémentaires?",
+          "type":"Multiple",
+          "choices":[
+            {
+              "name":"Comté AOP (20g)",
+              "price":80
+            },
+            {
+              "name":"Bacon",
+              "price":90
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Meal_sequences":[
+    {
+      "name":"Menu chaud",
+      "products":[
+        "Le burger boeuf",
+        "le burger saumon",
+        "le burger végétal"
+      ],
+      "hasProductSuggestion":true,
+      "products_suggetions":[
+        "crème vanille",
+        "café gourmnad",
+        "mini burger"
+      ],
+      "NbreOfChoices":3,
+      "price":1300
+    },
+    {
+      "name":"Menu Froid",
+      "products":[
+        "Le burger boeuf",
+        "le burger saumon",
+        "le burger végétal"
+      ],
+      "hasProductSuggestion":true,
+      "products_suggetions":[
+        "crème vanille",
+        "café gourmnad",
+        "mini burger"
+      ],
+      "NbreOfChoices":4,
+      "price":1400
+    }
+  ],
+  "event_suggestion":[
+    {
+      "trigger":"START",
+      "type":"Product",
+      "item":"le Mexicain"
+    },
+    {
+      "trigger":"BILL",
+      "type":"CAT",
+      "item":"Boissons chaudes"
+    }
+  ]
+},{
+
+  "category":[
+    {
+      "id" : 0,
+      "location":"A EMPORTER",
+      "title":"Les nouveautes",
+      "products":[
+        "MOELLEUX A LA CREME DE MARRONS",
+        "CRUMBLE AUX FRUITS EXOTIQUES"
+      ]
+    },
+    {
+      "id" : 1,
+      "location":"SUR PLACE",
+      "title":"Bowls",
+      "products":["POWER BOWL",
+        "SMOOTHIE BOWL A LA FRAISE"
+      ],
+      "mealSeqListe":1
+    },
+    {
+      "id" : 2,
+      "location":"SUR PLACE",
+      "title":"Pokes signatures",
+      "products":[
+        "POKE CHIRASHI HAWAIEN",
+        "POKE SIGNATURE SAUMON",
+        "POKE SIGNATURE THON",
+        "POKE POULET TERIYAKI",
+        "POKE SIGNATURE SAUMON"
+      ]
+    },
+    {
+      "id" : 3,
+      "location":"SUR PLACE",
+      "title":"Formules",
+      "products":[
+        "POKE CHIRASHI HAWAIEN",
+        "POKE SIGNATURE SAUMON",
+        "POKE SIGNATURE THON",
+        "POKE POULET TERIYAKI",
+        "POKE SIGNATURE SAUMON"
+      ],
+      "mealSeqList":[
+        {
+          "name": "FORMULE POKE + BOISSON + DESSERT",
+          "choice_id_1":["POKE CHIRASHI HAWAIEN"],
+          "choice_id_2":["BADOIT"],
+          "choice_id_3":["POWER BOWL"],
+          "choicesNumber": 3
+        },
+        {
+          "name": "POKE DESSERT",
+          "choice_id_1":["POKE CHIRASHI HAWAIEN"],
+          "choice_id_2":["BADOIT"],
+          "choice_id_3":["POWER BOWL"]
+        }
+      ]
+    }
+  ],
+  "Product":[
+    {
+      "category_id": 1,
+      "name":"POWER BOWL",
+      "hasMealSeqSugg":true,
+      "description":"Base végétale coco, banane, framboise, grenade, coco râpée, graines de courge, granola énergétique. Riche en vitamines et en fibres, le power bowl est un mix idéal pour les sportifs ! 225 kcal.",
+      "price":690,
+      "options":[
+        "Mini Power Bowl Création",
+        "Regular Power Bowl Création"
+      ],
+      "MealSeqSugg":[
+        "Menu Chaud",
+        "Menu Etudiant"
+      ],
+      "allergens":[
+        "Gluten",
+        "Moutarde"
+      ]
+    },
+    {
+      "category_id": 1,
+      "name":"ACAI BOWL",
+      "hasMealSeqSugg":true,
+      "description":"Pulpe d'acai amazonienne Bio, banane, grenades, graines de courge, coco râpée, le tout mélangé à notre granola énergétique. Un bol parfait pour vous apporter une énergie diffuse toute la journée ! Mini : 120 kcal / Regular : 230 kcal",
+      "price":690,
+      "options":[
+        "Mini",
+        "Regular",
+        "Framboise",
+        "Banane",
+        "Ananas",
+        "Mangue",
+        "Grenade"
+      ],
+      "MealSeqSugg":[
+        "Menu Chaud",
+        "Menu Etudiant"
+      ],
+      "allergens":[
+        "Gluten",
+        "Moutarde"
+      ]
+    },
+    {
+      "category_id": 2,
+      "name":"POWER BOWL",
+      "hasMealSeqSugg":true,
+      "description":"Base végétale coco, banane, framboise, grenade, coco râpée, graines de courge, granola énergétique. Riche en vitamines et en fibres, le power bowl est un mix idéal pour les sportifs ! 225 kcal.",
+      "price":690,
+      "options":[
+        "Mini Power Bowl Création",
+        "Regular Power Bowl Création"
+      ],
+      "MealSeqSugg":[
+        "Menu Chaud",
+        "Menu Etudiant"
+      ],
+      "allergens":[
+        "Gluten",
+        "Moutarde"
+      ]
+    },
+    {
+      "category_id": 1,
+      "name":"VEGGIE CHICK'EN BOWL",
+      "hasMealSeqSugg":true,
+      "description":"Base végétale coco, banane, framboise, grenade, coco râpée, graines de courge, granola énergétique. Riche en vitamines et en fibres, le power bowl est un mix idéal pour les sportifs ! 225 kcal.",
+      "price":690,
+      "options":[
+        "LIL Veggie Chicken",
+        "MEDIUM Veggie Chicken",
+        "BIG Veggie Chicken",
+        "Sauce Magic Sésame (sauce contenant du poisson)",
+        "Fresh Pomelo (huile d'olive, citron, pamplemousse)",
+        "Marinade soja salée",
+        "Marinade soja sucrée",
+        "Sauce tropicale (Fruit de la passion, huile d'olive, ciboulette, sel & poivre)",
+        "Ponzu Lime (Sauce japonaise aux agrumes)",
+        "Spicy Mayo",
+        "Sans sauce"
+      ],
+      "MealSeqSugg":[
+        "Menu Chaud",
+        "Menu Etudiant"
+      ],
+      "allergens":[
+        "Gluten",
+        "Moutarde"
+      ]
+    }
+  ],
+  "options":[
+    {
+      "product":"le comté",
+      "option":[
+        {
+          "name":"Souhaitez-vous des ingrédients supplémentaires?",
+          "type":"obligatoire",
+          "choices":[
+            {
+              "name":"Sans Bacon(20g)",
+              "price":80
+            },
+            {
+              "name":"Bacon",
+              "price":90
+            }
+          ]
+        },
+        {
+          "name":"Souhaitez-vous des ingrédients supplémentaires?",
+          "type":"Multiple",
+          "choices":[
+            {
+              "name":"Comté AOP (20g)",
+              "price":80
+            },
+            {
+              "name":"Bacon",
+              "price":90
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Meal_sequences":[
+    {
+      "id" : 1,
+      "name":"FORMULE POKÉ + BOISSON",
+      "products":[
+        "VEGGIE CHICK'EN BOWL",
+        "GREEN LOVER",
+        "POKÉ CHIRASHI HAWAIEN",
+        "LE CHIRASHI SAUMON AVOCAT",
+        "POKÉ SIGNATURE CREVETTES",
+        "POKÉ SIGNATURE SUPER PROTÉINE",
+        "POKÉ BOEUF TERIYAKI",
+        "POKÉ SIGNATURE FALAFELS",
+        "POKÉ SIGNATURE THON",
+        "POKÉ POULET TERIYAKI",
+        "POKÉ SIGNATURE SAUMON",
+        "Bière PVL BLONDE",
+        "Bière PVL BLANCHE",
+        "POKA BEER",
+        "EAU DE COCO BIO",
+        "JUS DETOX POMME-MANGUE",
+        "JUS DETOX POMME-FRUITS ROUGES",
+        "SNOWMELT GRENADE & ACAI",
+        "SNOWMELT MANDARINE & HOUBLON",
+        "LA BIG WAVE GOLDEN ALE",
+        "LEMONAID GINGER BIO",
+        "LEMONAID CITRON VERT BIO",
+        "LEMONAID FRUIT DE LA PASSION",
+        "THE GLACE MAISON",
+        "CITRONNADE MAISON",
+        "EVIAN",
+        "EAU GAZEUSE",
+        "COCA-COLA",
+        "COCA-COLA ZERO"
+      ],
+      "hasProductSuggestion":true,
+      "products_suggetions":[
+        "crème vanille",
+        "café gourmnad",
+        "mini burger"
+      ],
+      "NbreOfChoices":3,
+      "price":1300
+    }
+  ],
+  "event_suggestion":[
+    {
+      "trigger":"START",
+      "type":"Product",
+      "item":"le Mexicain"
+    },
+    {
+      "trigger":"BILL",
+      "type":"CAT",
+      "item":"Boissons chaudes"
+    }
+  ]
+
+}]
